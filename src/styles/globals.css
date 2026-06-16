@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary: #2E7D32;
+  --darkgreen: #1B5E20;
+  --gold: #F9A825;
+  --bg: #F5F9F4;
+  --text: #1F2937;
+}
+
+html,body,#root {
+  height: 100%;
+}
+
+body{
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
