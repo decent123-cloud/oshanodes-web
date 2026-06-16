@@ -24,7 +24,7 @@ const galleryItems = [
   {src:'oshanodes 11.jpg', label:'Quality Inspection'},
   {src:'oshanodes 12.jpg', label:'price tags'},
   {src:'oshanodes 13.jpg', label:'Crop Care'},
-  {src:'oshanodes 6.jpg', label:'Farmer Team'}
+  {src:'oshanodes 6.jpg', label:'Team Members'},
 ]
 
 export default function Gallery(){

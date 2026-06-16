@@ -7,13 +7,13 @@ export const metadata = {
     title: 'About — Oshanodes Agro',
     description: 'Learn about Oshanodes Agro, our mission, vision, and sustainable farming history.',
     type:'website',
-    images:[{url:'/images/oshanodes 2.jpg', alt:'Oshanodes Agro farm'}]
+    images:[{url:'/images/founder .png', alt:'Oshanodes Agro Founder'}]
   },
   twitter:{
     card:'summary_large_image',
     title:'About — Oshanodes Agro',
     description:'Learn about Oshanodes Agro, our mission, vision, and sustainable farming history.',
-    images:['/images/oshanodes 2.jpg']
+    images:['/images/founder .png']
   }
 }
 
@@ -22,7 +22,7 @@ export default function About(){
     <section className="container py-12">
       <h1 className="text-3xl font-bold">About Oshanodes Agro</h1>
       <div className="mt-6 grid md:grid-cols-2 gap-6 items-center">
-        <img src="/images/oshanodes 2.jpg" alt="Oshanodes Agro farm" className="w-full rounded shadow" />
+        <img src="/images/founder .png" alt="Oshanodes Agro Founder" className="w-full rounded shadow" />
         <div>
           <p>Oshanodes Agro is committed to sustainable farming practices that protect ecosystems while delivering premium rice and beans to communities.</p>
           <h3 className="mt-6 font-semibold">Mission</h3>
