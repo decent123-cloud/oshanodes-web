@@ -25,10 +25,10 @@ export default function Footer(){
         <div>
           <h4 className="font-semibold">Social</h4>
           <ul className="mt-2 space-y-2 text-sm">
-            <li><a href="https://www.facebook.com/yourpage" target="_blank" rel="noreferrer" className="text-primary">Facebook</a></li>
-            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noreferrer" className="text-primary">Twitter</a></li>
-            <li><a href="https://www.instagram.com/yourhandle" target="_blank" rel="noreferrer" className="text-primary">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/company/your-company" target="_blank" rel="noreferrer" className="text-primary">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="text-primary">Facebook</a></li>
+            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-primary">Twitter</a></li>
+            <li><a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-primary">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/your-company" target="_blank" rel="noopener noreferrer" className="text-primary">LinkedIn</a></li>
           </ul>
         </div>
       </div>

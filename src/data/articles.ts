@@ -12,29 +12,11 @@ Our approach combines traditional knowledge passed down through generations with
 
 The benefits are significant: improved soil quality, reduced chemical runoff, healthier crops, and better yields. More importantly, sustainable rice farming creates a positive impact on our communities and environment.`,
     category: 'rice-farming',
-    author: 'Chioma Okafor',
+    author: 'Engr. Fabian Orka',
     publishDate: '2024-06-01',
     readingTime: 5,
-    image: '/images/oshanodes 3.jpg',
+    image: '/images/oshanodes 5.jpg',
     featured: true
-  },
-  {
-    id: '2',
-    slug: 'how-oshanodes-produces-premium-beans',
-    title: 'How Oshanodes Produces Premium Beans',
-    excerpt: 'Learn about our rigorous quality standards and farming techniques that ensure every batch of Oshanodes beans meets the highest nutritional and taste standards.',
-    content: `Premium bean production requires meticulous attention to detail at every stage, from soil preparation through harvest and processing.
-
-At Oshanodes Agro, we start with carefully selected seed varieties known for their nutritional density and flavor profile. Our farmers implement precision planting techniques that optimize spacing and density for maximum plant health.
-
-Throughout the growing season, we monitor soil moisture, nutrient levels, and plant development continuously. During harvest, only mature beans at peak ripeness are collected. After harvest, our beans undergo careful drying, sorting, and quality inspection to remove any substandard product.
-
-The result is a premium bean product that our customers trust and love.`,
-    category: 'bean-farming',
-    author: 'Kofi Mensah',
-    publishDate: '2024-05-28',
-    readingTime: 6,
-    image: '/images/oshanodes 4.jpg'
   },
   {
     id: '3',
@@ -49,10 +31,10 @@ Our commitment to sustainability also ensures consistent food supply, reduces wa
 
 This is not just about individual products—it's about transforming the entire food system.`,
     category: 'sustainability',
-    author: 'Dr. Amara Adeyemi',
+    author: 'Engr. Decent Emmanuel',
     publishDate: '2024-05-20',
     readingTime: 7,
-    image: '/images/oshanodes 5.jpg'
+    image: '/images/oshanodes 3.jpg'
   },
   {
     id: '4',
@@ -67,7 +49,7 @@ But technology alone isn't enough. The future requires stronger partnerships bet
 
 We're committed to being leaders in this transformation, proving that agriculture can be profitable, sustainable, and regenerative.`,
     category: 'agricultural-tips',
-    author: 'Yusuf Ahmed',
+    author: 'Oshanodes Team',
     publishDate: '2024-05-15',
     readingTime: 8,
     image: '/images/oshanodes 6.jpg'
@@ -103,7 +85,7 @@ The cooperative also provides education on sustainable farming, soil management,
 
 Over the past two years, Maria has doubled her harvest while reducing her input costs. She's invested in her children's education and improved her family's home. Her story is just one of hundreds in the Oshanodes cooperative network.`,
     category: 'community-stories',
-    author: 'Samuel Okonkwo',
+    author: 'Engr. Logan Thewis',
     publishDate: '2024-05-10',
     readingTime: 5,
     image: '/images/oshanodes 8.jpg'
@@ -126,10 +108,10 @@ These practices rebuild soil structure, increase water retention, and enhance be
 
 Implementing these practices requires initial investment and patience, but the long-term benefits justify the transition.`,
     category: 'agricultural-tips',
-    author: 'Dr. Adeyinka Oluwaseun',
+    author: 'Engr. Elijah Oga',
     publishDate: '2024-04-28',
     readingTime: 6,
-    image: '/images/oshanodes 10.jpg'
+    image: '/images/oshanodes 11.jpg'
   },
   {
     id: '8',
@@ -144,32 +126,10 @@ At Oshanodes Agro, we've implemented these techniques across our operations, red
 
 These practices benefit both our bottom line and the environment.`,
     category: 'sustainability',
-    author: 'Emeka Nwosu',
+    author: 'DR. Isreal Peter',
     publishDate: '2024-04-15',
     readingTime: 5,
-    image: '/images/oshanodes 11.jpg'
-  },
-  {
-    id: '9',
-    slug: 'bean-varieties-guide',
-    title: 'Complete Guide to Bean Varieties',
-    excerpt: 'Explore different bean varieties, their characteristics, nutritional profiles, and best uses in traditional and modern cuisine.',
-    content: `Beans are a staple crop with diverse varieties, each with unique characteristics. Understanding these varieties helps farmers select the best options for their environment and market.
-
-Common varieties include:
-- Black-eyed peas: Creamy texture, mild flavor
-- Kidney beans: Robust flavor, firm texture
-- Navy beans: Versatile, great for soups
-- Pinto beans: Nutty flavor, popular in Latin cuisine
-
-Each variety has different growing requirements, maturity periods, and market demand. At Oshanodes Agro, we cultivate multiple varieties to meet diverse customer needs and maximize soil health through crop rotation.
-
-Selecting the right variety for your region and market is essential for success.`,
-    category: 'bean-farming',
-    author: 'Zainab Ibrahim',
-    publishDate: '2024-04-08',
-    readingTime: 6,
-    image: '/images/oshanodes 12.jpg'
+    image: '/images/oshanodes 10.jpg'
   },
   {
     id: '10',
@@ -189,7 +149,7 @@ Women bring innovation, resilience, and community focus to agriculture. When we 
 
 The women in our network are proof that gender equity and agricultural success go hand-in-hand.`,
     category: 'community-stories',
-    author: 'Folake Adeniyi',
+    author: 'miss. Loved',
     publishDate: '2024-03-28',
     readingTime: 5,
     image: '/images/oshanodes 13.jpg'
@@ -212,7 +172,7 @@ These practices reduce vulnerability to drought, flooding, and temperature extre
 
 Our commitment to resilience benefits farmers, consumers, and the planet.`,
     category: 'sustainability',
-    author: 'Dr. Chukwudi Okafor',
+    author: 'miss. Loved',
     publishDate: '2024-03-15',
     readingTime: 7,
     image: '/images/oshanodes 14.jpg'
