@@ -27,10 +27,10 @@ export default function FeaturedArticle({ article }: { article: Article }) {
           <span className="inline-block text-xs uppercase tracking-widest font-bold text-gold mb-3">
             Featured: {CATEGORY_LABELS[article.category]}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 leading-tight">
             {article.title}
           </h2>
-          <p className="text-lg text-white/90 mb-4 max-w-2xl">
+          <p className="text-base sm:text-lg text-white/90 mb-4 max-w-full">
             {article.excerpt}
           </p>
           <div className="flex flex-wrap gap-4 text-sm text-white/80 mb-6">
@@ -42,7 +42,7 @@ export default function FeaturedArticle({ article }: { article: Article }) {
           </div>
           <Link
             href={`/blog/${article.slug}`}
-            className="inline-block px-6 py-3 bg-white text-primary font-semibold rounded hover:bg-gold transition-colors"
+            className="inline-block px-5 py-3 bg-white text-primary font-semibold rounded hover:bg-gold transition-colors"
           >
             Read Full Article
           </Link>

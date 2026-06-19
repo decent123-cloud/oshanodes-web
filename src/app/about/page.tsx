@@ -36,10 +36,8 @@ export default function About(){
         <h2 className="text-2xl font-bold">Our Journey</h2>
         <div className="mt-8 space-y-8">
           {[
-            {year:'2018', title:'Founded', details:'Oshanodes Agro started with a small sustainable rice farm in the Benue Valley.'},
-            {year:'2020', title:'Expanded', details:'We expanded production to include beans while refining sustainable land practices.'},
-            {year:'2022', title:'Community Growth', details:'Partnered with local cooperatives to improve supply chain and community livelihoods.'},
-            { year: '2024', title: 'Modern Farming', details: 'Invested in modern processing and quality control for premium rice and beans.' },
+            {year:'2023', title:'Founded', details:'Oshanodes Agro started with a small sustainable rice farm in the Benue Valley.'},
+            {year:'2024', title:'Community Growth', details:'Partnered with local cooperatives to improve supply chain and community livelihoods.'},
             { year: '2025', title: 'Sustainability Leader', details: 'Recognized for our commitment to sustainability and community impact in agriculture.' },
             { year: '2026', title: 'Future Growth', details: 'massive sales and Planning to expand into new markets and continue innovating in sustainable farming.' }
           ].map(item => (

@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 const items = [
-  {label:'Sustainable Farming', value:120},
-  {label:'Quality Produce', value:98},
-  {label:'Community Impact', value:45},
-  {label:'Trusted Agriculture', value:20}
+  { label: 'Distributors', value: 10 },
+  { label: 'Distribution (States)', value: 3 },
+  { label: 'Agri-Awareness (Years)', value: 3 },
+  { label: 'Trusted Agriculture', value: 10 },
 ]
 
 function Counter({value}:{value:number}){
