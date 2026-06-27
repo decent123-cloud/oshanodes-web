@@ -3,8 +3,11 @@ import Image from 'next/image'
 export default function Team(){
   const cofounders = [
     {name: 'Loved', role: 'Co-founder', img: '/images/cofounder .png'},
-    {name: 'Co-founder 2', role: 'Co-founder', img: '/images/cofounder 2.jpg'},
-    {name: 'Co-founder 3', role: 'Co-founder', img: '/images/cofounder3.jpg'}
+  ]
+  
+  const teamMembers = [
+    {name: 'Enoch Suleiman', role: 'Lead A1.onomist', department: 'Agriculture', img: '/images/team1.jpg'},
+    {name: 'teams', role: 'Product Management', department: 'Production', img: '/images/oshanodes 6.jpg'},
   ]
 
   return (
@@ -38,7 +41,26 @@ export default function Team(){
               </div>
             ))}
           </div>
-          <p className="mt-4 text-sm text-slate-600">Replace the placeholder images in /public/images with the actual photos: funder.jpg, cofounder1.jpg, cofounder2.jpg, cofounder3.jpg.</p>
+        </div>
+      </div>
+
+      <div className="mt-12">
+        <h3 className="text-lg font-semibold">Team Members</h3>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          {teamMembers.map((member) => (
+            <div key={member.name} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-100 flex-shrink-0">
+                  <Image src={member.img} alt={member.name} width={64} height={64} className="object-cover" />
+                </div>
+                <div className="flex-1">
+                  <p className="font-semibold text-sm">{member.name}</p>
+                  <p className="text-xs text-slate-600">{member.role}</p>
+                </div>
+              </div>
+              <span className="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full">{member.department}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
