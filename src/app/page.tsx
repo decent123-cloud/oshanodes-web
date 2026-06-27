@@ -12,7 +12,24 @@ export const metadata = {
 
 export default function Home(){
   const latestArticles = getLatestArticles(3)
-
+  const featuredProducts = [
+    {
+      title: 'Rice',
+      desc: 'Premium locally cultivated rice grown using sustainable methods and carefully processed for quality.',
+      src: '/images/oshanodes 3.jpg'
+    },
+    {
+      title: 'Beans',
+      desc: 'High-quality nutrient-rich beans carefully cultivated and processed for everyday meals and trade.',
+      src: '/images/beans.png'
+    },
+    {
+      title: 'Fresh Produce',
+      desc: 'A vibrant selection of farm produce sourced with care and delivered with consistency.',
+      src: '/images/marketing-flier-1.jpeg'
+    }
+  ]
+                                                                           
   return (
     <>
       <Hero />
@@ -32,9 +49,20 @@ export default function Home(){
       </section>
 
       <section className="container py-12">
-        <div className="grid gap-6 md:grid-cols-2">
-          <ProductCard title="Rice" desc="Premium locally cultivated rice grown using sustainable methods." src="/images/oshanodes 3.jpg" />
-          <ProductCard title="Beans" desc="High-quality nutrient-rich beans carefully cultivated and processed." src="/images/oshanodes 4.jpg" />
+        <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">Our Products</p>
+            <h3 className="text-3xl font-semibold text-slate-900">Modern agricultural products presented with clarity and care.</h3>
+          </div>
+          <Link href="/products" className="inline-flex items-center justify-center rounded-full border border-primary px-5 py-2.5 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white">
+            View All Products
+          </Link>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {featuredProducts.map((product) => (
+            <ProductCard key={product.title} title={product.title} desc={product.desc} src={product.src} />
+          ))}
         </div>
       </section>
 
