@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Hero(){
   return (
-    <section className="relative h-[75vh] sm:h-[80vh] lg:h-screen overflow-hidden">
+   <section className="relative h-[35vh] sm:h-[50vh] lg:h-[40vh] overflow-hidden">
       {/* Background Image with Responsive Object-Fit */}
       <Image
         src="/images/oshanodes 1.jpg"
