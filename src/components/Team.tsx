@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 export default function Team(){
   const cofounders = [
-    {name: 'Loved', role: 'Co-founder', img: '/images/cofounder .png'},
+    {name: 'Loveth', role: 'Co-founder', img: '/images/cofounder .png'},
   ]
   
   const teamMembers = [
-    {name: 'Enoch Suleiman', role: 'Lead A1.onomist', department: 'Agriculture', img: '/images/team1.jpg'},
+    {name: 'Favour Rapheal', role: 'Marketing Lead', department: 'Agriculture', img: '/images/team1.jpg'},
     {name: 'teams', role: 'Product Management', department: 'Production', img: '/images/oshanodes 6.jpg'},
   ]
 
@@ -16,7 +16,7 @@ export default function Team(){
 
       <div className="mt-8 grid gap-8 md:grid-cols-3 items-start">
         <div className="md:col-span-1">
-          <h3 className="text-lg font-semibold">Funder</h3>
+          <h3 className="text-lg font-semibold">Founder</h3>
           <div className="mt-4 flex flex-col items-center text-center">
             <div className="w-44 h-44 rounded-full overflow-hidden bg-gray-100">
               <Image src="/images/founder .png" alt="Funder" width={176} height={176} className="object-cover" />

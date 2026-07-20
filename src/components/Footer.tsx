@@ -19,7 +19,7 @@ export default function Footer(){
         <div>
           <h4 className="font-semibold">Contact</h4>
           <p className="mt-2 text-sm">Email: oshanodestech@gmail.com</p>
-          <p className="text-sm">Phone: +234 705 360 1636</p>
+          <p className="text-sm">Phone: +234 8149597806</p>
           <p className="text-sm">Location: Benue Valley, Nigeria</p>
         </div>
         <div>

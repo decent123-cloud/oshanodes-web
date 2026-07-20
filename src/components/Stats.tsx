@@ -6,7 +6,6 @@ const items = [
   { label: 'Distributors', value: 10 },
   { label: 'Distribution (States)', value: 3 },
   { label: 'Agri-Awareness (Years)', value: 3 },
-  { label: 'Trusted Agriculture', value: 10 },
 ]
 
 function Counter({value}:{value:number}){
