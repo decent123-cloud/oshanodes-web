@@ -1,13 +1,19 @@
 import Image from 'next/image'
 
-export default function Team(){
+export default function Team() {
+  const founder = {
+    name: 'FABIAN ORKA',
+    role: 'Founder Oshanodes',
+    img: '/images/founder%20.png',
+  }
+
   const cofounders = [
-    {name: 'Loveth', role: 'Co-founder', img: '/images/cofounder .png'},
+    { name: 'Loveth', role: 'Co-founder', img: '/images/cofounder%20.png' },
   ]
-  
+
   const teamMembers = [
-    {name: 'Favour Rapheal', role: 'Marketing Lead', department: 'Agriculture', img: '/images/team1.jpg'},
-    {name: 'teams', role: 'Product Management', department: 'Production', img: '/images/oshanodes 6.jpg'},
+    { name: 'Favour Rapheal', role: 'Marketing Lead', department: 'Agriculture', img: '/images/team1.jpg' },
+    { name: 'teams', role: 'Product Management', department: 'Production', img: '/images/oshanodes 6.jpg' },
   ]
 
   return (
@@ -19,10 +25,10 @@ export default function Team(){
           <h3 className="text-lg font-semibold">Founder</h3>
           <div className="mt-4 flex flex-col items-center text-center">
             <div className="w-44 h-44 rounded-full overflow-hidden bg-gray-100">
-              <Image src="/images/founder .png" alt="Funder" width={176} height={176} className="object-cover" />
+              <Image src={founder.img} alt={founder.name} width={176} height={176} className="object-cover" priority />
             </div>
-            <p className="mt-4 font-semibold">FABIAN ORKA</p>
-            <p className="text-sm text-slate-600">founder Oshanodes</p>
+            <p className="mt-4 font-semibold">{founder.name}</p>
+            <p className="text-sm text-slate-600">{founder.role}</p>
           </div>
         </div>
 
