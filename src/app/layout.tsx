@@ -4,8 +4,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Oshanodes Agro - Rebuilding the Food System',
-  description: 'Oshanodes Agro produces premium rice and beans through sustainable farming practices.',
+  title: 'Oshanodes Agro - Transforming Staple Foods',
+  description: 'Oshanodes transforms locally produced crops into improved staple foods through consumer-led innovation.',
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon' },
@@ -15,18 +15,18 @@ export const metadata = {
     apple: '/apple-touch-icon.png'
   },
   openGraph: {
-    title: 'Oshanodes Agro - Rebuilding the Food System',
-    description: 'Oshanodes Agro produces premium rice and beans through sustainable farming practices.',
+    title: 'Oshanodes Agro - Transforming Staple Foods',
+    description: 'Oshanodes transforms locally produced crops into improved staple foods through consumer-led innovation.',
     type: 'website',
     images: [
-      { url: '/images/oshanodes 1.jpg', alt: 'Oshanodes Agro rice farm' }
+      { url: '/images/brand/rice_farm.png', alt: 'Oshanodes Agro rice farm' }
     ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Oshanodes Agro',
-    description: 'Rebuilding the food system through sustainable agriculture.',
-    images: ['/images/oshanodes 1.jpg']
+    description: 'Transforming staple foods through consumer-driven innovation.',
+    images: ['/images/brand/rice_farm.png']
   }
 }
 

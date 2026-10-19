@@ -1,0 +1,174 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img "Oshanodes Agro Logo" [ref=e5]
+        - generic [ref=e6]: Oshanodes Agro
+      - navigation [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about
+        - link "Products" [ref=e10] [cursor=pointer]:
+          - /url: /products
+        - link "Sustainability" [ref=e11] [cursor=pointer]:
+          - /url: /sustainability
+        - link "Gallery" [ref=e12] [cursor=pointer]:
+          - /url: /gallery
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - img "Sustainable Agriculture" [ref=e17]
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Sustainable Rice & Beans
+        - heading "Rebuilding the Food System Through Sustainable Agriculture" [level=1] [ref=e22]
+        - generic [ref=e23]:
+          - link "Explore Products" [ref=e24] [cursor=pointer]:
+            - /url: /products
+          - link "Contact Us" [ref=e25] [cursor=pointer]:
+            - /url: /contact
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: Trusted Agriculture
+        - heading "Sustainable rice and beans grown for communities." [level=2] [ref=e30]
+      - link "Learn More" [ref=e31] [cursor=pointer]:
+        - /url: /about
+    - generic [ref=e32]:
+      - heading "Our Impact" [level=3] [ref=e33]
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - text: "10"
+          - generic [ref=e37]: Distributors
+        - generic [ref=e38]:
+          - text: "3"
+          - generic [ref=e39]: Distribution (States)
+        - generic [ref=e40]:
+          - text: "3"
+          - generic [ref=e41]: Agri-Awareness (Years)
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: Our Products
+          - heading "Modern agricultural products presented with clarity and care." [level=3] [ref=e46]
+        - link "View All Products" [ref=e47] [cursor=pointer]:
+          - /url: /products
+      - generic [ref=e48]:
+        - article [ref=e49]:
+          - img "Rice" [ref=e51]
+          - generic [ref=e52]:
+            - heading "Rice" [level=3] [ref=e53]
+            - paragraph [ref=e54]: Premium locally cultivated rice grown using sustainable methods and carefully processed for quality.
+            - link "Enquire" [ref=e56] [cursor=pointer]:
+              - /url: /contact
+        - article [ref=e57]:
+          - img "Beans" [ref=e59]
+          - generic [ref=e60]:
+            - heading "Beans" [level=3] [ref=e61]
+            - paragraph [ref=e62]: High-quality nutrient-rich beans carefully cultivated and processed for everyday meals and trade.
+            - link "Enquire" [ref=e64] [cursor=pointer]:
+              - /url: /contact
+        - article [ref=e65]:
+          - img "Fresh Produce" [ref=e67]
+          - generic [ref=e68]:
+            - heading "Fresh Produce" [level=3] [ref=e69]
+            - paragraph [ref=e70]: A vibrant selection of farm produce sourced with care and delivered with consistency.
+            - link "Enquire" [ref=e72] [cursor=pointer]:
+              - /url: /contact
+    - generic [ref=e73]:
+      - heading "Why Oshanodes Agro" [level=3] [ref=e74]
+      - generic [ref=e75]:
+        - generic [ref=e76]: Organic farming practices
+        - generic [ref=e77]: Quality rice and beans
+        - generic [ref=e78]: Community-first agriculture
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - paragraph [ref=e82]: Knowledge Hub
+        - heading "Latest Agricultural Insights" [level=2] [ref=e83]
+        - paragraph [ref=e84]: Discover expert knowledge on sustainable farming, rice cultivation, beans production, and agricultural innovation.
+      - generic [ref=e85]:
+        - article [ref=e86]:
+          - link [ref=e87] [cursor=pointer]:
+            - /url: /blog/oshanodes-expansion-announcement
+            - img "Oshanodes Agro Expansion Announcement" [ref=e88]
+          - generic [ref=e89]:
+            - generic [ref=e90]: Company News
+            - link [ref=e92] [cursor=pointer]:
+              - /url: /blog/oshanodes-expansion-announcement
+              - heading "Oshanodes Agro Expansion Announcement" [level=3] [ref=e93]
+            - paragraph [ref=e94]: We're thrilled to announce our expansion into three new farming regions across the Benue Valley, creating new opportunities for farmers and customers.
+            - generic [ref=e95]:
+              - generic [ref=e96]: Oshanodes Communications
+              - generic [ref=e97]: 4 min read
+            - link "Read More →" [ref=e99] [cursor=pointer]:
+              - /url: /blog/oshanodes-expansion-announcement
+        - article [ref=e100]:
+          - link [ref=e101] [cursor=pointer]:
+            - /url: /blog/sustainable-rice-farming-nigeria
+            - img "Sustainable Rice Farming in Nigeria" [ref=e102]
+          - generic [ref=e103]:
+            - generic [ref=e104]: Rice Farming
+            - link [ref=e106] [cursor=pointer]:
+              - /url: /blog/sustainable-rice-farming-nigeria
+              - heading "Sustainable Rice Farming in Nigeria" [level=3] [ref=e107]
+            - paragraph [ref=e108]: Discover how traditional methods combined with modern sustainable practices are revolutionizing rice farming in Nigeria.
+            - generic [ref=e109]:
+              - generic [ref=e110]: Engr. Fabian Orka
+              - generic [ref=e111]: 5 min read
+            - link "Read More →" [ref=e113] [cursor=pointer]:
+              - /url: /blog/sustainable-rice-farming-nigeria
+        - article [ref=e114]:
+          - link [ref=e115] [cursor=pointer]:
+            - /url: /blog/building-healthier-food-system
+            - img "Building a Healthier Food System" [ref=e116]
+          - generic [ref=e117]:
+            - generic [ref=e118]: Sustainability
+            - link [ref=e120] [cursor=pointer]:
+              - /url: /blog/building-healthier-food-system
+              - heading "Building a Healthier Food System" [level=3] [ref=e121]
+            - paragraph [ref=e122]: Exploring how sustainable agricultural practices contribute to food security, nutrition, and community health across West Africa.
+            - generic [ref=e123]:
+              - generic [ref=e124]: Engr. Decent Emmanuel
+              - generic [ref=e125]: 7 min read
+            - link "Read More →" [ref=e127] [cursor=pointer]:
+              - /url: /blog/building-healthier-food-system
+      - link "View All Articles" [ref=e129] [cursor=pointer]:
+        - /url: /blog
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - heading "Oshanodes Agro" [level=3] [ref=e133]
+        - paragraph [ref=e134]: Rebuilding the Food System Through Sustainable Agriculture
+      - generic [ref=e135]:
+        - heading "Quick Links" [level=4] [ref=e136]
+        - list [ref=e137]:
+          - listitem [ref=e138]:
+            - link "Home" [ref=e139] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e140]:
+            - link "About" [ref=e141] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e142]:
+            - link "Products" [ref=e143] [cursor=pointer]:
+              - /url: /products
+      - generic [ref=e144]:
+        - heading "Contact" [level=4] [ref=e145]
+        - paragraph [ref=e146]: "Email: oshanodestech@gmail.com"
+        - paragraph [ref=e147]: "Phone: +234 8149597806"
+        - paragraph [ref=e148]: Minna, Niger State, Nigeria
+      - generic [ref=e149]:
+        - heading "Social" [level=4] [ref=e150]
+        - list [ref=e151]:
+          - listitem [ref=e152]:
+            - link "Facebook" [ref=e153] [cursor=pointer]:
+              - /url: https://www.facebook.com/oshanodes
+          - listitem [ref=e154]:
+            - link "Twitter" [ref=e155] [cursor=pointer]:
+              - /url: https://x.com/oshanodes
+          - listitem [ref=e156]:
+            - link "Instagram" [ref=e157] [cursor=pointer]:
+              - /url: https://www.instagram.com/oshanodes
+    - generic [ref=e158]: © 2026 Oshanodes Agro. All rights reserved.
+  - alert [ref=e159]

@@ -9,31 +9,31 @@ export default function FeaturedArticle({ article }: { article: Article }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="relative min-h-[500px] rounded-lg overflow-hidden"
+      className="relative min-h-[520px] overflow-hidden rounded-[30px] bg-[#0a4325] shadow-[0_30px_65px_-38px_rgba(10,67,37,0.5)]"
     >
       <img
         src={article.image}
         alt={article.title}
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#071f14]/95 via-[#0a4325]/40 to-transparent" />
       
-      <div className="relative h-full flex flex-col justify-end p-6 md:p-10 text-white">
+      <div className="relative flex min-h-[520px] flex-col justify-end p-7 text-white md:p-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.4 }}
         >
-          <span className="inline-block text-xs uppercase tracking-widest font-bold text-gold mb-3">
+          <span className="mb-3 inline-block text-xs font-bold uppercase tracking-[0.24em] text-[#e7d9a5]">
             Featured: {CATEGORY_LABELS[article.category]}
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 leading-tight">
+          <h2 className="mb-3 max-w-3xl text-3xl font-extrabold leading-tight tracking-[-0.05em] sm:text-4xl md:text-5xl">
             {article.title}
           </h2>
-          <p className="text-base sm:text-lg text-white/90 mb-4 max-w-full">
+          <p className="mb-4 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">
             {article.excerpt}
           </p>
-          <div className="flex flex-wrap gap-4 text-sm text-white/80 mb-6">
+          <div className="mb-6 flex flex-wrap gap-4 text-sm text-white/70">
             <span>{article.author}</span>
             <span>•</span>
             <span>{new Date(article.publishDate).toLocaleDateString()}</span>
@@ -42,7 +42,7 @@ export default function FeaturedArticle({ article }: { article: Article }) {
           </div>
           <Link
             href={`/blog/${article.slug}`}
-            className="inline-block px-5 py-3 bg-white text-primary font-semibold rounded hover:bg-gold transition-colors"
+            className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-bold text-primary transition hover:bg-[#f3e8c7]"
           >
             Read Full Article
           </Link>

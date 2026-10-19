@@ -11,8 +11,8 @@ export default function RelatedArticles({ articles }: RelatedArticlesProps) {
   if (articles.length === 0) return null
 
   return (
-    <section className="mt-12 border-t pt-8">
-      <h3 className="text-2xl font-bold mb-6">Related Articles</h3>
+    <section className="mt-16 border-t border-slate-200 pt-10">
+      <h3 className="mb-7 text-3xl font-extrabold tracking-[-0.05em] text-[#16372c]">Keep reading</h3>
       <div className="grid md:grid-cols-3 gap-6">
         {articles.map((article, idx) => (
           <motion.div

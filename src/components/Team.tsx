@@ -2,70 +2,59 @@ import Image from 'next/image'
 
 export default function Team() {
   const founder = {
-    name: 'FABIAN ORKA',
+    name: 'Fabian Orkar',
     role: 'Founder Oshanodes',
-    img: '/images/founder%20.png',
+    img: '/images/team/founder%20.png',
   }
 
   const cofounders = [
-    { name: 'Loveth', role: 'Co-founder', img: '/images/cofounder%20.png' },
+    { name: 'Loveth', role: 'Co-founder', img: '/images/team/cofounder%20.png' },
   ]
 
   const teamMembers = [
-    { name: 'Favour Rapheal', role: 'Marketing Lead', department: 'Agriculture', img: '/images/team1.jpg' },
-    { name: 'teams', role: 'Product Management', department: 'Production', img: '/images/oshanodes 6.jpg' },
+    { name: 'Favour Rapheal', role: 'Lead', department: 'Marketing', img: '/images/team/favour_rapheal_marketing_lead.jpg' },
+    // { name: 'teams', role: 'Product Management', department: 'Production', img: '/images/brand/rice_farm.png' },
   ]
 
   return (
-    <section className="container py-12">
-      <h2 className="text-2xl font-bold">Our Team & Supporters</h2>
-
-      <div className="mt-8 grid gap-8 md:grid-cols-3 items-start">
-        <div className="md:col-span-1">
-          <h3 className="text-lg font-semibold">Founder</h3>
-          <div className="mt-4 flex flex-col items-center text-center">
-            <div className="w-44 h-44 rounded-full overflow-hidden bg-gray-100">
-              <Image src={founder.img} alt={founder.name} width={176} height={176} className="object-cover" priority />
+    <section id="team" className="scroll-mt-24 bg-white/75 py-16 md:py-20">
+      <div className="container">
+        <div className="max-w-2xl">
+          <p className="section-kicker">The people behind the work</p>
+          <h2 className="section-title text-4xl md:text-5xl">Meet our team.</h2>
+        </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article className="group overflow-hidden rounded-[26px] bg-[#f0f4ee]">
+            <div className="h-72 overflow-hidden">
+              <Image src={founder.img} alt={founder.name} width={480} height={600} className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" priority />
             </div>
-            <p className="mt-4 font-semibold">{founder.name}</p>
-            <p className="text-sm text-slate-600">{founder.role}</p>
-          </div>
-        </div>
-
-        <div className="md:col-span-2">
-          <h3 className="text-lg font-semibold">Co-founders</h3>
-          <div className="mt-4 grid gap-6 sm:grid-cols-2">
-            {cofounders.map((c) => (
-              <div key={c.name} className="flex items-center gap-4 bg-white p-4 rounded shadow">
-                <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-100">
-                  <Image src={c.img} alt={c.name} width={80} height={80} className="object-cover" />
-                </div>
-                <div>
-                  <p className="font-semibold">{c.name}</p>
-                  <p className="text-sm text-slate-600">{c.role}</p>
-                </div>
+            <div className="p-5">
+              <p className="font-extrabold tracking-[-0.03em] text-[#16372c]">{founder.name}</p>
+              <p className="mt-1 text-sm text-slate-600">{founder.role}</p>
+            </div>
+          </article>
+          {cofounders.map((person) => (
+            <article key={person.name} className="group overflow-hidden rounded-[26px] bg-[#f0f4ee]">
+              <div className="h-72 overflow-hidden">
+                <Image src={person.img} alt={person.name} width={480} height={600} className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-12">
-        <h3 className="text-lg font-semibold">Team Members</h3>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              <div className="p-5">
+                <p className="font-extrabold tracking-[-0.03em] text-[#16372c]">{person.name}</p>
+                <p className="mt-1 text-sm text-slate-600">{person.role}</p>
+              </div>
+            </article>
+          ))}
           {teamMembers.map((member) => (
-            <div key={member.name} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-100 flex-shrink-0">
-                  <Image src={member.img} alt={member.name} width={64} height={64} className="object-cover" />
-                </div>
-                <div className="flex-1">
-                  <p className="font-semibold text-sm">{member.name}</p>
-                  <p className="text-xs text-slate-600">{member.role}</p>
-                </div>
+            <article key={member.name} className="group overflow-hidden rounded-[26px] bg-[#f0f4ee]">
+              <div className="h-72 overflow-hidden">
+                <Image src={member.img} alt={member.name} width={480} height={600} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
               </div>
-              <span className="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full">{member.department}</span>
-            </div>
+              <div className="p-5">
+                <p className="font-extrabold tracking-[-0.03em] text-[#16372c]">{member.name}</p>
+                <p className="mt-1 text-sm text-slate-600">{member.role}</p>
+                <span className="mt-3 inline-flex rounded-full bg-white px-3 py-1 text-xs font-semibold text-[#0f5c32]">{member.department}</span>
+              </div>
+            </article>
           ))}
         </div>
       </div>

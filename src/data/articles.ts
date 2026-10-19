@@ -15,7 +15,7 @@ The benefits are significant: improved soil quality, reduced chemical runoff, he
     author: 'Engr. Fabian Orka',
     publishDate: '2024-06-01',
     readingTime: 5,
-    image: '/images/oshanodes 5.jpg',
+    image: '/images/brand/rice_farm.png',
     featured: true
   },
   {
@@ -34,7 +34,7 @@ This is not just about individual products—it's about transforming the entire 
     author: 'Engr. Decent Emmanuel',
     publishDate: '2024-05-20',
     readingTime: 7,
-    image: '/images/oshanodes 3.jpg'
+    image: '/images/products/beans.png'
   },
   {
     id: '4',
@@ -52,7 +52,7 @@ We're committed to being leaders in this transformation, proving that agricultur
     author: 'Oshanodes Team',
     publishDate: '2024-05-15',
     readingTime: 8,
-    image: '/images/oshanodes 6.jpg'
+    image: '/images/rice_9x16_shots/prepared_rice_and_beans.jpeg'
   },
   {
     id: '5',
@@ -70,7 +70,7 @@ This growth positions Oshanodes Agro to serve more customers across West Africa 
     author: 'Oshanodes Communications',
     publishDate: '2024-06-10',
     readingTime: 4,
-    image: '/images/oshanodes 7.jpg'
+    image: '/images/products/rice.jpg'
   },
   {
     id: '6',
@@ -88,7 +88,7 @@ Over the past two years, Maria has doubled her harvest while reducing her input 
     author: 'Engr. Logan Thewis',
     publishDate: '2024-05-10',
     readingTime: 5,
-    image: '/images/oshanodes 8.jpg'
+    image: '/images/rice_9x16_shots/jollof_rice.jpeg'
   },
   {
     id: '7',
@@ -111,7 +111,7 @@ Implementing these practices requires initial investment and patience, but the l
     author: 'Engr. Elijah Oga',
     publishDate: '2024-04-28',
     readingTime: 6,
-    image: '/images/oshanodes 11.jpg'
+    image: '/images/rice_9x16_shots/prepared_rice_and_egg.jpeg'
   },
   {
     id: '8',
@@ -129,7 +129,7 @@ These practices benefit both our bottom line and the environment.`,
     author: 'DR. Isreal Peter',
     publishDate: '2024-04-15',
     readingTime: 5,
-    image: '/images/oshanodes 10.jpg'
+    image: '/images/brand/logo.jpeg'
   },
   {
     id: '10',
@@ -152,7 +152,7 @@ The women in our network are proof that gender equity and agricultural success g
     author: 'miss. Loved',
     publishDate: '2024-03-28',
     readingTime: 5,
-    image: '/images/oshanodes 13.jpg'
+    image: '/images/brand/rice_farm.png'
   },
   {
     id: '11',
@@ -175,7 +175,7 @@ Our commitment to resilience benefits farmers, consumers, and the planet.`,
     author: 'miss. Loved',
     publishDate: '2024-03-15',
     readingTime: 7,
-    image: '/images/oshanodes 14.jpg'
+    image: '/images/products/beans.png'
   },
   {
     id: '12',
@@ -197,7 +197,7 @@ We're grateful for our customers' trust and commitment to better agriculture.`,
     author: 'Oshanodes Team',
     publishDate: '2024-03-01',
     readingTime: 4,
-    image: '/images/oshanodes 5.jpg',
+    image: '/images/brand/rice_farm.png',
     featured: true
   }
 ]

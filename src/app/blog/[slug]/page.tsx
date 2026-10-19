@@ -55,6 +55,8 @@ export async function generateStaticParams() {
 }
 
 export default function ArticlePage({ params }: ArticlePageProps) {
+  if (process.env.BLOG_ENABLED !== 'true') notFound()
+
   const article = getArticleBySlug(params.slug)
   
   if (!article) {
@@ -70,10 +72,12 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <>
-      <article className="container py-12">
-        <ArticleHeader article={article} />
+      <article className="container max-w-6xl py-12 md:py-16">
+        <div className="mx-auto max-w-5xl">
+          <ArticleHeader article={article} />
+        </div>
 
-        <div className="mt-10 prose prose-lg max-w-4xl mx-auto">
+        <div className="prose prose-lg mx-auto mt-10 max-w-3xl">
           <ArticleContent content={article.content} />
         </div>
 
@@ -82,16 +86,16 @@ export default function ArticlePage({ params }: ArticlePageProps) {
         )}
       </article>
 
-      <section className="bg-gray-50 py-12 mt-12">
+      <section className="mt-12 border-y border-slate-200 bg-white/75 py-12">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid gap-5 md:grid-cols-2">
             {prevArticle && (
               <Link
                 href={`/blog/${prevArticle.slug}`}
-                className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow"
+                className="rounded-[24px] border border-slate-200/70 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"
               >
-                <p className="text-sm text-slate-500 mb-2">← Previous Article</p>
-                <h3 className="font-bold hover:text-primary transition-colors">
+                <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">← Previous article</p>
+                <h3 className="font-bold text-[#16372c] transition-colors hover:text-primary">
                   {prevArticle.title}
                 </h3>
               </Link>
@@ -99,10 +103,10 @@ export default function ArticlePage({ params }: ArticlePageProps) {
             {nextArticle && (
               <Link
                 href={`/blog/${nextArticle.slug}`}
-                className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow md:text-right"
+                className="rounded-[24px] border border-slate-200/70 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg md:text-right"
               >
-                <p className="text-sm text-slate-500 mb-2">Next Article →</p>
-                <h3 className="font-bold hover:text-primary transition-colors">
+                <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Next article →</p>
+                <h3 className="font-bold text-[#16372c] transition-colors hover:text-primary">
                   {nextArticle.title}
                 </h3>
               </Link>

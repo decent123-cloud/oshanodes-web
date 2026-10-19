@@ -5,43 +5,47 @@ export const metadata = {
     title:'Gallery — Oshanodes Agro',
     description:'Explore photos of our sustainable rice and bean farms, harvests, and community work.',
     type:'website',
-    images:[{url:'/images/oshanodes 5.jpg', alt:'Rice farming gallery'}]
+    images:[{url:'/images/brand/rice_farm.png', alt:'Rice farming gallery'}]
   },
   twitter:{
     card:'summary_large_image',
     title:'Gallery — Oshanodes Agro',
     description:'Explore photos of our sustainable rice and bean farms, harvests, and community work.',
-    images:['/images/oshanodes 5.jpg']
+    images:['/images/brand/rice_farm.png']
   }
 }
 
 const galleryItems = [
-    {
-        src: 'marketing-flier-1.jpeg', label: 'marketing flier' },
-  {src:'oshanodes 6.jpg', label:'research and development'},
-  {src:'oshanodes 7.jpg', label:'volunteers, welcome!!!'},
-  {src:'oshanodes 10.jpg', label:'Our priority'},
-  {src:'oshanodes 11.jpg', label:'Quality Inspection'},
-  {src:'oshanodes 12.jpg', label:'price tags'},
-  {src:'oshanodes 13.jpg', label:'Crop Care'},
-  {src:'oshanodes 6.jpg', label:'Team Members'},
+  { src: '/images/brand/rice_farm.png', label: 'Rice farm view' },
+  { src: '/images/products/rice.jpg', label: 'Premium rice' },
+  { src: '/images/products/beans.png', label: 'Quality beans' },
+  { src: '/images/rice_9x16_shots/jollof_rice.jpeg', label: 'Jollof rice' },
+  { src: '/images/rice_9x16_shots/prepared_rice_and_beans.jpeg', label: 'Rice and beans' },
+  { src: '/images/rice_9x16_shots/prepared_rice_and_egg.jpeg', label: 'Rice and egg' },
+  { src: '/images/brand/logo.jpeg', label: 'Brand identity' },
 ]
 
 export default function Gallery(){
   return (
-    <section className="container py-12">
-      <h1 className="text-3xl font-bold">Gallery</h1>
-      <p className="mt-3 text-sm text-slate-600">Browse our farm operations, community partnerships, harvest moments, and sustainable practices.</p>
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {galleryItems.map((item, index) => (
-          <div key={item.src} className={`overflow-hidden rounded-xl shadow-lg ${index%3===0 ? 'lg:col-span-2' : ''}`}>
-            <img src={`/images/${item.src}`} alt={item.label} className="w-full h-72 object-cover" />
-            <div className="bg-white p-4">
-              <p className="font-semibold">{item.label}</p>
-            </div>
+    <>
+      <section className="container py-16 md:py-24">
+        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-3xl">
+            <p className="section-kicker">The Oshanodes story</p>
+            <h1 className="section-title">Rooted in the land.<br />Made for the table.</h1>
           </div>
-        ))}
-      </div>
-    </section>
+          <p className="max-w-md text-sm leading-7 text-slate-600 md:pb-2">A closer look at our farms, the food we grow, and the moments that bring it all together.</p>
+        </div>
+        <div className="mt-12 grid auto-rows-[220px] gap-4 sm:grid-cols-2 lg:auto-rows-[260px] lg:grid-cols-3">
+          {galleryItems.map((item, index) => (
+            <figure key={item.src} className={`group relative overflow-hidden rounded-[24px] bg-emerald-950 shadow-[0_18px_42px_-28px_rgba(10,67,37,0.4)] ${index === 0 ? 'sm:row-span-2 sm:h-auto' : ''}`}>
+              <img src={item.src} alt={item.label} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
+              <figcaption className="absolute bottom-0 left-0 right-0 p-5 text-lg font-bold text-white">{item.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+    </>
   )
 }

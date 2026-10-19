@@ -37,14 +37,14 @@ export default function ContactForm() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="bg-white p-6 rounded shadow grid gap-4"
+      className="grid gap-4 rounded-[28px] border border-slate-200/70 bg-white p-6 shadow-[0_22px_55px_-35px_rgba(10,67,37,0.28)] md:p-8"
     >
       <div className="grid md:grid-cols-2 gap-4">
         <input
           name="name"
           required
           placeholder="Full Name"
-          className="p-3 border rounded"
+          className="rounded-xl border border-slate-200 bg-[#fbfcfa] px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-emerald-800/50 focus:ring-4 focus:ring-emerald-900/5"
         />
 
         <input
@@ -52,7 +52,7 @@ export default function ContactForm() {
           type="email"
           required
           placeholder="Email Address"
-          className="p-3 border rounded"
+          className="rounded-xl border border-slate-200 bg-[#fbfcfa] px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-emerald-800/50 focus:ring-4 focus:ring-emerald-900/5"
         />
       </div>
 
@@ -60,14 +60,14 @@ export default function ContactForm() {
         <input
           name="phone"
           placeholder="Phone Number"
-          className="p-3 border rounded"
+          className="rounded-xl border border-slate-200 bg-[#fbfcfa] px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-emerald-800/50 focus:ring-4 focus:ring-emerald-900/5"
         />
 
         <input
           name="subject"
           required
           placeholder="Subject"
-          className="p-3 border rounded"
+          className="rounded-xl border border-slate-200 bg-[#fbfcfa] px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-emerald-800/50 focus:ring-4 focus:ring-emerald-900/5"
         />
       </div>
 
@@ -75,18 +75,18 @@ export default function ContactForm() {
         <select
           name="product"
           title="Select Product"
-          className="p-3 border rounded"
+          className="rounded-xl border border-slate-200 bg-[#fbfcfa] px-4 py-3 text-sm text-slate-600 outline-none transition focus:border-emerald-800/50 focus:ring-4 focus:ring-emerald-900/5"
         >
           <option value="">Select Product</option>
           <option value="Rice">Rice</option>
           <option value="Beans">Beans</option>
-          <option value="Fresh Produce">Fresh Produce</option>
+          <option value="Oshkon">Oshkon grain-preservation machine</option>
         </select>
 
         <input
           name="quantity"
           placeholder="Quantity Needed"
-          className="p-3 border rounded"
+          className="rounded-xl border border-slate-200 bg-[#fbfcfa] px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-emerald-800/50 focus:ring-4 focus:ring-emerald-900/5"
         />
       </div>
 
@@ -94,13 +94,13 @@ export default function ContactForm() {
         name="message"
         required
         placeholder="Write your message..."
-        className="p-3 border rounded h-32"
+        className="h-36 rounded-xl border border-slate-200 bg-[#fbfcfa] px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-emerald-800/50 focus:ring-4 focus:ring-emerald-900/5"
       />
 
       <button
         type="submit"
         disabled={submitting}
-        className="bg-primary text-white py-3 rounded hover:opacity-90 transition disabled:opacity-50"
+        className="rounded-full bg-[#0f5c32] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0a4325] disabled:cursor-not-allowed disabled:opacity-50"
       >
         {submitting ? "Sending..." : "Send Message"}
       </button>

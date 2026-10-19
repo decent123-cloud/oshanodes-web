@@ -1,101 +1,112 @@
 import Hero from '../components/Hero'
 import Stats from '../components/Stats'
 import ProductCard from '../components/ProductCard'
+import Team from '../components/Team'
 import Link from 'next/link'
-import { getLatestArticles } from '@/data/articles'
-import BlogCard from '@/components/blog/BlogCard'
 
 export const metadata = {
   title: 'Oshanodes Agro',
-  description: 'Oshanodes Agro produces premium rice and beans through sustainable farming practices in Nigeria.'
+  description: 'Oshanodes transforms locally produced crops into improved staple foods through consumer-led innovation.'
 }
 
-export default function Home(){
-  const latestArticles = getLatestArticles(3)
+export default function Home() {
   const featuredProducts = [
     {
-      title: 'Rice',
-      desc: 'Premium locally cultivated rice grown using sustainable methods and carefully processed for quality.',
-      src: '/images/oshanodes 3.jpg'
+      title: 'Premium Rice',
+      desc: 'Value-added rice developed to bring greater quality and convenience to an everyday staple.',
+      src: '/images/products/rice.jpg'
     },
     {
       title: 'Beans',
-      desc: 'High-quality nutrient-rich beans carefully cultivated and processed for everyday meals and trade.',
-      src: '/images/beans.png'
+      desc: 'A familiar staple, thoughtfully developed for households and everyday meals.',
+      src: '/images/products/beans.png'
     },
     {
-      title: 'Fresh Produce',
-      desc: 'A vibrant selection of farm produce sourced with care and delivered with consistency.',
-      src: '/images/marketing-flier-1.jpeg'
+      title: 'Corn Flour',
+      desc: 'Makes perfectly smooth fufu, improves gut health, and gives you long-lasting body energy.',
+      src: '/images/products/corn-flour.png'
     }
   ]
-                                                                           
+
+  const values = [
+    {
+      title: 'Consumer-first thinking',
+      text: 'We start with everyday food challenges and build products around what people need.'
+    },
+    {
+      title: 'Research-led innovation',
+      text: 'We research, test, and refine safe, natural ways to make staple foods better.'
+    },
+    {
+      title: 'More value from local crops',
+      text: 'We improve locally produced staples and develop practical solutions across the food chain.'
+    }
+  ]
+
   return (
     <>
       <Hero />
-      <section className="container py-12">
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+
+      <nav aria-label="Home page sections" className="container pt-8">
+        <div className="flex flex-wrap gap-3">
+          <a href="#why-oshanodes" className="inline-flex rounded-full border border-emerald-900/10 bg-white px-5 py-2.5 text-sm font-semibold text-[#0f5c32] transition hover:bg-emerald-50">Why Oshanodes</a>
+          <a href="#home-products" className="inline-flex rounded-full border border-emerald-900/10 bg-white px-5 py-2.5 text-sm font-semibold text-[#0f5c32] transition hover:bg-emerald-50">Our products</a>
+          <a href="#home-impact" className="inline-flex rounded-full border border-emerald-900/10 bg-white px-5 py-2.5 text-sm font-semibold text-[#0f5c32] transition hover:bg-emerald-50">Our impact</a>
+          <a href="#team" className="inline-flex rounded-full bg-[#0f5c32] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0a4325]">Meet the team</a>
+        </div>
+      </nav>
+
+      <section id="why-oshanodes" className="scroll-mt-24 container py-16 md:py-24">
+        <div className="grid items-end gap-8 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-primary">Trusted Agriculture</p>
-            <h2 className="text-3xl font-bold">Sustainable rice and beans grown for communities.</h2>
+            <p className="section-kicker">Why Oshanodes</p>
+            <h2 className="section-title">Food innovation that starts with everyday needs.</h2>
           </div>
-          <Link href="/about" className="inline-block rounded bg-primary px-5 py-3 text-white">Learn More</Link>
-        </div>
-      </section>
-
-      <section className="container py-12">
-        <h3 className="text-2xl font-semibold">Our Impact</h3>
-        <Stats />
-      </section>
-
-      <section className="container py-12">
-        <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">Our Products</p>
-            <h3 className="text-3xl font-semibold text-slate-900">Modern agricultural products presented with clarity and care.</h3>
-          </div>
-          <Link href="/products" className="inline-flex items-center justify-center rounded-full border border-primary px-5 py-2.5 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white">
-            View All Products
-          </Link>
+          <p className="section-copy lg:mb-2">
+            We bring together food research, agriculture, and technology to turn local crops into improved, value-added foods shaped by consumer needs.
+          </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.title} title={product.title} desc={product.desc} src={product.src} />
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {values.map((value) => (
+            <div key={value.title} className="premium-card rounded-[28px] p-7">
+              <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#edf7ee] text-lg font-bold text-[#0f5c32]">✓</div>
+              <h3 className="text-2xl font-bold tracking-[-0.05em] text-[#16372c]">{value.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{value.text}</p>
+            </div>
           ))}
         </div>
       </section>
 
-      <section className="container py-12">
-        <h3 className="text-2xl font-semibold">Why Oshanodes Agro</h3>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          <div className="rounded bg-white p-6 shadow">Organic farming practices</div>
-          <div className="rounded bg-white p-6 shadow">Quality rice and beans</div>
-          <div className="rounded bg-white p-6 shadow">Community-first agriculture</div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-b from-primary/10 to-transparent py-12">
+      <section id="home-products" className="scroll-mt-24 bg-white/75 py-16 md:py-20">
         <div className="container">
-          <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary font-semibold">Knowledge Hub</p>
-            <h2 className="text-3xl font-bold">Latest Agricultural Insights</h2>
-            <p className="mt-2 text-lg text-slate-600">Discover expert knowledge on sustainable farming, rice cultivation, beans production, and agricultural innovation.</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {latestArticles.map(article => (
-              <BlogCard key={article.id} article={article} />
-            ))}
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link href="/blog" className="inline-block px-6 py-3 bg-primary text-white rounded font-semibold hover:bg-darkgreen transition-colors">
-              View All Articles
+          <div className="mb-9 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="section-kicker">Our products</p>
+              <h2 className="section-title text-4xl md:text-5xl">Everyday staples, thoughtfully improved.</h2>
+            </div>
+            <Link href="/products" className="inline-flex items-center justify-center rounded-full border border-[#0f5c32]/10 bg-[#f2faf3] px-5 py-2.5 text-sm font-semibold text-[#0f5c32] transition hover:bg-[#e7f4eb]">
+              View all products
             </Link>
           </div>
+
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.title} title={product.title} desc={product.desc} src={product.src} />
+            ))}
+          </div>
         </div>
       </section>
+
+      <section id="home-impact" className="scroll-mt-24 container py-16 md:py-20">
+        <div className="mb-8 max-w-2xl">
+          <p className="section-kicker">Our impact</p>
+          <h2 className="section-title text-4xl md:text-5xl">Growing value through food innovation.</h2>
+        </div>
+        <Stats />
+      </section>
+
+      <Team />
     </>
   )
 }

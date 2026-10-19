@@ -23,7 +23,7 @@ export default function Pagination({ currentPage, totalPages, baseUrl }: Paginat
       {currentPage > 1 && (
         <Link
           href={`${baseUrl}?page=${currentPage - 1}`}
-          className="p-2 rounded border hover:bg-gray-100 transition-colors"
+          className="rounded-full border border-slate-200 bg-white p-2 transition-colors hover:bg-emerald-50"
           aria-label="Previous page"
         >
           <ChevronLeft size={20} />
@@ -32,7 +32,7 @@ export default function Pagination({ currentPage, totalPages, baseUrl }: Paginat
 
       {visiblePages[0] > 1 && (
         <>
-          <Link href={`${baseUrl}?page=1`} className="px-3 py-2 rounded hover:bg-gray-100">
+          <Link href={`${baseUrl}?page=1`} className="rounded-full px-3 py-2 hover:bg-emerald-50">
             1
           </Link>
           {visiblePages[0] > 2 && <span className="px-2">...</span>}
@@ -43,10 +43,10 @@ export default function Pagination({ currentPage, totalPages, baseUrl }: Paginat
         <Link
           key={page}
           href={`${baseUrl}?page=${page}`}
-          className={`px-3 py-2 rounded transition-colors ${
+          className={`rounded-full px-3 py-2 text-sm font-semibold transition-colors ${
             page === currentPage
               ? 'bg-primary text-white'
-              : 'hover:bg-gray-100'
+              : 'text-slate-600 hover:bg-emerald-50'
           }`}
         >
           {page}
@@ -60,7 +60,7 @@ export default function Pagination({ currentPage, totalPages, baseUrl }: Paginat
           )}
           <Link
             href={`${baseUrl}?page=${totalPages}`}
-            className="px-3 py-2 rounded hover:bg-gray-100"
+            className="rounded-full px-3 py-2 hover:bg-emerald-50"
           >
             {totalPages}
           </Link>
@@ -70,7 +70,7 @@ export default function Pagination({ currentPage, totalPages, baseUrl }: Paginat
       {currentPage < totalPages && (
         <Link
           href={`${baseUrl}?page=${currentPage + 1}`}
-          className="p-2 rounded border hover:bg-gray-100 transition-colors"
+          className="rounded-full border border-slate-200 bg-white p-2 transition-colors hover:bg-emerald-50"
           aria-label="Next page"
         >
           <ChevronRight size={20} />

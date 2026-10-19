@@ -1,0 +1,179 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Oshanodes Agro Logo Agro Oshanodes" [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - img "Oshanodes Agro Logo" [ref=f1e6]
+        - generic [ref=f1e7]:
+          - generic [ref=f1e8]: Agro
+          - generic [ref=f1e9]: Oshanodes
+      - navigation [ref=f1e10]:
+        - link "Home" [ref=f1e11] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f1e12] [cursor=pointer]:
+          - /url: /about
+        - link "Products" [ref=f1e13] [cursor=pointer]:
+          - /url: /products
+        - link "Sustainability" [ref=f1e14] [cursor=pointer]:
+          - /url: /sustainability
+        - link "Gallery" [ref=f1e15] [cursor=pointer]:
+          - /url: /gallery
+        - link "Blog" [ref=f1e16] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=f1e17] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=f1e18]:
+    - generic [ref=f1e19]:
+      - img "Rice field at sunrise" [ref=f1e20]
+      - generic [ref=f1e23]:
+        - paragraph [ref=f1e24]: Sustainable rice & beans
+        - heading "Premium food grown for a better tomorrow." [level=1] [ref=f1e25]
+        - paragraph [ref=f1e26]: From local farms to dependable supply, Oshanodes delivers quality rice and beans with care, consistency, and purpose.
+        - generic [ref=f1e27]:
+          - link "Explore Products" [ref=f1e28] [cursor=pointer]:
+            - /url: /products
+          - link "Talk to Us" [ref=f1e29] [cursor=pointer]:
+            - /url: /contact
+    - generic [ref=f1e30]:
+      - generic [ref=f1e31]:
+        - generic [ref=f1e32]:
+          - paragraph [ref=f1e33]: Why Oshanodes
+          - heading "Simple, premium agriculture built around trust." [level=2] [ref=f1e34]
+        - paragraph [ref=f1e35]: We combine local agricultural knowledge with disciplined production to deliver rice and beans that are dependable, beautiful in presentation, and valued by people who care about food quality.
+      - generic [ref=f1e36]:
+        - generic [ref=f1e37]:
+          - generic [ref=f1e38]: ✓
+          - heading "Sustainable farming" [level=3] [ref=f1e39]
+          - paragraph [ref=f1e40]: Thoughtful cultivation practices that respect soil, community, and long-term productivity.
+        - generic [ref=f1e41]:
+          - generic [ref=f1e42]: ✓
+          - heading "Reliable supply" [level=3] [ref=f1e43]
+          - paragraph [ref=f1e44]: A consistent production and distribution model designed for partners, households, and growing demand.
+        - generic [ref=f1e45]:
+          - generic [ref=f1e46]: ✓
+          - heading "Quality first" [level=3] [ref=f1e47]
+          - paragraph [ref=f1e48]: Every batch is chosen for purity, texture, and the standards we stand behind.
+    - generic [ref=f1e50]:
+      - generic [ref=f1e51]:
+        - generic [ref=f1e52]:
+          - paragraph [ref=f1e53]: Our products
+          - heading "Fresh from the farm, ready for the market." [level=2] [ref=f1e54]
+        - link "View all products" [ref=f1e55] [cursor=pointer]:
+          - /url: /products
+      - generic [ref=f1e56]:
+        - article [ref=f1e57]:
+          - img "Premium Rice" [ref=f1e59]
+          - generic [ref=f1e60]:
+            - heading "Premium Rice" [level=3] [ref=f1e61]
+            - paragraph [ref=f1e62]: Carefully cultivated and processed rice selected for quality, consistency, and everyday value.
+            - link "Enquire" [ref=f1e64] [cursor=pointer]:
+              - /url: /contact
+        - article [ref=f1e65]:
+          - img "Beans" [ref=f1e67]
+          - generic [ref=f1e68]:
+            - heading "Beans" [level=3] [ref=f1e69]
+            - paragraph [ref=f1e70]: Nutritious, dependable beans grown to meet the standards of homes, retailers, and bulk buyers.
+            - link "Enquire" [ref=f1e72] [cursor=pointer]:
+              - /url: /contact
+        - article [ref=f1e73]:
+          - img "Farm Fresh Produce" [ref=f1e75]
+          - generic [ref=f1e76]:
+            - heading "Farm Fresh Produce" [level=3] [ref=f1e77]
+            - paragraph [ref=f1e78]: A curated selection of quality farm produce built around freshness, traceability, and trust.
+            - link "Enquire" [ref=f1e80] [cursor=pointer]:
+              - /url: /contact
+    - generic [ref=f1e81]:
+      - generic [ref=f1e82]:
+        - paragraph [ref=f1e83]: Our impact
+        - heading "Measured by quality, community, and consistency." [level=2] [ref=f1e84]
+      - generic [ref=f1e86]:
+        - generic [ref=f1e87]:
+          - text: "0"
+          - generic [ref=f1e88]: Farm partners
+        - generic [ref=f1e89]:
+          - text: "0"
+          - generic [ref=f1e90]: States reached
+        - generic [ref=f1e91]:
+          - text: "0"
+          - generic [ref=f1e92]: Years of impact
+        - generic [ref=f1e93]:
+          - generic [ref=f1e94]: 0%
+          - generic [ref=f1e95]: Premium quality promise
+    - generic [ref=f1e98]:
+      - generic [ref=f1e99]:
+        - paragraph [ref=f1e100]: Knowledge hub
+        - heading "Agricultural insights for a smarter food future." [level=2] [ref=f1e101]
+        - paragraph [ref=f1e102]: Learn from practical knowledge on sustainable farming, processing, and modern agricultural growth.
+      - generic [ref=f1e103]:
+        - article [ref=f1e104]:
+          - link [ref=f1e105] [cursor=pointer]:
+            - /url: /blog/oshanodes-expansion-announcement
+            - img "Oshanodes Agro Expansion Announcement" [ref=f1e106]
+          - generic [ref=f1e107]:
+            - generic [ref=f1e108]: Company News
+            - link [ref=f1e110] [cursor=pointer]:
+              - /url: /blog/oshanodes-expansion-announcement
+              - heading "Oshanodes Agro Expansion Announcement" [level=3] [ref=f1e111]
+            - paragraph [ref=f1e112]: We're thrilled to announce our expansion into three new farming regions across the Benue Valley, creating new opportunities for farmers and customers.
+            - generic [ref=f1e113]:
+              - generic [ref=f1e114]: Oshanodes Communications
+              - generic [ref=f1e115]: 4 min read
+            - link "Read More →" [ref=f1e117] [cursor=pointer]:
+              - /url: /blog/oshanodes-expansion-announcement
+        - article [ref=f1e118]:
+          - link [ref=f1e119] [cursor=pointer]:
+            - /url: /blog/sustainable-rice-farming-nigeria
+            - img "Sustainable Rice Farming in Nigeria" [ref=f1e120]
+          - generic [ref=f1e121]:
+            - generic [ref=f1e122]: Rice Farming
+            - link [ref=f1e124] [cursor=pointer]:
+              - /url: /blog/sustainable-rice-farming-nigeria
+              - heading "Sustainable Rice Farming in Nigeria" [level=3] [ref=f1e125]
+            - paragraph [ref=f1e126]: Discover how traditional methods combined with modern sustainable practices are revolutionizing rice farming in Nigeria.
+            - generic [ref=f1e127]:
+              - generic [ref=f1e128]: Engr. Fabian Orka
+              - generic [ref=f1e129]: 5 min read
+            - link "Read More →" [ref=f1e131] [cursor=pointer]:
+              - /url: /blog/sustainable-rice-farming-nigeria
+        - article [ref=f1e132]:
+          - link [ref=f1e133] [cursor=pointer]:
+            - /url: /blog/building-healthier-food-system
+            - img "Building a Healthier Food System" [ref=f1e134]
+          - generic [ref=f1e135]:
+            - generic [ref=f1e136]: Sustainability
+            - link [ref=f1e138] [cursor=pointer]:
+              - /url: /blog/building-healthier-food-system
+              - heading "Building a Healthier Food System" [level=3] [ref=f1e139]
+            - paragraph [ref=f1e140]: Exploring how sustainable agricultural practices contribute to food security, nutrition, and community health across West Africa.
+            - generic [ref=f1e141]:
+              - generic [ref=f1e142]: Engr. Decent Emmanuel
+              - generic [ref=f1e143]: 7 min read
+            - link "Read More →" [ref=f1e145] [cursor=pointer]:
+              - /url: /blog/building-healthier-food-system
+  - contentinfo [ref=f1e146]:
+    - generic [ref=f1e147]:
+      - generic [ref=f1e148]:
+        - generic [ref=f1e149]: Oshanodes
+        - paragraph [ref=f1e150]: Premium rice and beans cultivated with care, quality, and a long-term vision for food systems.
+      - generic [ref=f1e151]:
+        - heading "Explore" [level=3] [ref=f1e152]
+        - list [ref=f1e153]:
+          - listitem [ref=f1e154]:
+            - link "About" [ref=f1e155] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f1e156]:
+            - link "Products" [ref=f1e157] [cursor=pointer]:
+              - /url: /products
+          - listitem [ref=f1e158]:
+            - link "Sustainability" [ref=f1e159] [cursor=pointer]:
+              - /url: /sustainability
+          - listitem [ref=f1e160]:
+            - link "Blog" [ref=f1e161] [cursor=pointer]:
+              - /url: /blog
+      - generic [ref=f1e162]:
+        - heading "Contact" [level=3] [ref=f1e163]
+        - list [ref=f1e164]:
+          - listitem [ref=f1e165]: "Email: oshanodestech@gmail.com"
+          - listitem [ref=f1e166]: "Phone: +234 8149597806"
+          - listitem [ref=f1e167]: Minna, Niger State, Nigeria
+    - generic [ref=f1e168]: © 2026 Oshanodes Agro. All rights reserved.
